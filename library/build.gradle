@@ -3,7 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.github.dcendents.android-maven'
 
-group='com.github.jikun2008'
+group='com.github.dstmath'
 android {
     compileSdkVersion 29
 //    buildToolsVersion "29.0.3"
@@ -30,7 +30,8 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     compileOnly 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'com.squareup.okhttp3:okhttp:4.3.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.10.0'
     implementation 'org.greenrobot:eventbus:3.1.1'
 
 }
